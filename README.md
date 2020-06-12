@@ -20,14 +20,14 @@ S −→ ScT | T
 T −→ aSb | iaLb | ε  
 L −→ SdL | S  
 This CFG will have the following string encoding.  
-S,ScT,T;T,aSb,iaLb,e;L,SdL,S  
+**S,ScT,T;T,aSb,iaLb,e;L,SdL,S**  
 • The output of each of First and Follow is, similar to the input, a semi-colon-separated
 sequence of items, where each item is a comma-separated pair. The first element of each
 pair is a variable of the grammar and the second element is a string representing the First
 or, respectively, the Follow set of that variable. The symbols in these strings should appear
 in alphabetical order. ($ always appears last.) For example, the result of calling First on
 the above CFG may have the following form  
-S,acei;T,aei;L,acdei  
+**S,acei;T,aei;L,acdei**    
 Similarly, the result of calling Follow may be as follows  
-S,bcd$;T,bcd$;L,b
+**S,bcd$;T,bcd$;L,b**  
 
